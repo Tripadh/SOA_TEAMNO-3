@@ -1,0 +1,4 @@
+com\apothecary\gateway\util\JwtUtil.class
+com\apothecary\gateway\ApothecaryApiGatewayApplication.class
+com\apothecary\gateway\filter\AuthenticationFilter$Config.class
+com\apothecary\gateway\filter\AuthenticationFilter.class

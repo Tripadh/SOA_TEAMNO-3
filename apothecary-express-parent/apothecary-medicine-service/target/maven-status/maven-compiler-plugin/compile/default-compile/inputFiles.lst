@@ -1,0 +1,12 @@
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\service\MedicineService.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\entity\Medicine.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\repository\MedicineRepository.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\exception\GlobalExceptionHandler.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\ApothecaryMedicineServiceApplication.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\exception\InsufficientStockException.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\dto\MedicineRequest.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\dto\StockUpdateRequest.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\config\OpenApiConfig.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\exception\MedicineNotFoundException.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\dto\MedicineResponse.java
+D:\SOA\apothecary-express-parent\apothecary-medicine-service\src\main\java\com\apothecary\medicine\controller\MedicineController.java

@@ -1,0 +1,14 @@
+com\apothecary\medicine\dto\MedicineResponse.class
+com\apothecary\medicine\exception\GlobalExceptionHandler.class
+com\apothecary\medicine\entity\Medicine.class
+com\apothecary\medicine\exception\MedicineNotFoundException.class
+com\apothecary\medicine\exception\InsufficientStockException.class
+com\apothecary\medicine\service\MedicineService.class
+com\apothecary\medicine\dto\StockUpdateRequest.class
+com\apothecary\medicine\dto\MedicineRequest.class
+com\apothecary\medicine\ApothecaryMedicineServiceApplication.class
+com\apothecary\medicine\config\OpenApiConfig.class
+com\apothecary\medicine\controller\MedicineController.class
+com\apothecary\medicine\dto\MedicineResponse$MedicineResponseBuilder.class
+com\apothecary\medicine\entity\Medicine$MedicineBuilder.class
+com\apothecary\medicine\repository\MedicineRepository.class
