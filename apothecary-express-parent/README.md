@@ -166,3 +166,20 @@ POST /api/orders
 ## S. Known Limitations
 - Compensation strategy uses sequential REST calls instead of two-phase commit or Kafka. Not suitable for highly distributed eventual consistency, but ideal for academic synchronous demonstration.
 - Secrets are hardcoded in `application.yml` for local testing convenience.
+## U. Error Handling
+
+The backend services implement centralized exception handling to provide consistent API responses.
+
+Common errors handled include:
+
+- Invalid login credentials
+- Duplicate user registration
+- Medicine not found
+- Insufficient medicine stock
+- Invalid order requests
+- Unauthorized access
+- Forbidden admin operations
+- Invalid or expired JWT tokens
+- Internal service communication failures
+
+The services return appropriate HTTP status codes along with meaningful error messages.
