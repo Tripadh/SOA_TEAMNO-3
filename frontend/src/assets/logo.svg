@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" width="160" height="40" fill="none">
+  <!-- Geometric Clinical Hexagon Cross Emblem -->
+  <g transform="translate(4, 4)">
+    <rect width="32" height="32" rx="8" fill="#080F4F"/>
+    <!-- Stylized Pharmaceutical Cross + Express Arrow -->
+    <path d="M16 9V23M9 16H23" stroke="#C8A7F5" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="16" cy="16" r="3" fill="#6D28D9"/>
+    <path d="M21 11L24 14L21 17" stroke="#FFFFFF" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="44" y="20" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="13" font-weight="800" letter-spacing="1.5" fill="#080F4F">APOTHECARY</text>
+  <text x="44" y="32" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="9" font-weight="600" letter-spacing="2.8" fill="#6D28D9">EXPRESS</text>
+</svg>

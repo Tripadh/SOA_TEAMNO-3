@@ -1,0 +1,183 @@
+.clinical-page {
+  padding-bottom: var(--space-xl);
+}
+
+.clinical-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.clinical-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.clinical-title {
+  line-height: 1.05;
+}
+
+.meta-pill-large {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--surface-container-low);
+  border: 1px solid var(--border-hairline);
+  padding: 10px 16px;
+  border-radius: var(--radius-lg);
+}
+
+.meta-pill-large .material-symbols-outlined {
+  font-size: 28px;
+}
+
+.clinical-feedback-bar {
+  background-color: var(--surface-container-low);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: slideDown 0.3s ease;
+}
+
+/* Card Header Between */
+.card-header-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+/* Topology */
+.topology-card {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.topology-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gutter);
+}
+
+.topology-node {
+  background-color: var(--surface-container-low);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.topology-node:hover {
+  transform: translateY(-2px);
+  border-color: var(--secondary);
+}
+
+.node-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.node-role {
+  line-height: 16px;
+}
+
+.node-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  border-top: 1px solid var(--border-hairline);
+  padding-top: 8px;
+  margin-top: 4px;
+}
+
+.stat-unit {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ledger Section */
+.ledger-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.table-verify-btn {
+  padding: 4px 10px;
+  font-size: 11px;
+}
+
+/* Vaults Card */
+.vaults-card {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+.vaults-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gutter);
+}
+
+.vault-tile {
+  background-color: var(--surface-container-low);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vault-tile-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vault-temp-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-hairline);
+  padding-top: 8px;
+}
+
+.vault-load-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .topology-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vaults-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .topology-grid {
+    grid-template-columns: 1fr;
+  }
+  .vaults-grid {
+    grid-template-columns: 1fr;
+  }
+}

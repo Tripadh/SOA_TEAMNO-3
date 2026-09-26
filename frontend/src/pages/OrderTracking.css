@@ -1,0 +1,432 @@
+.tracking-page {
+  padding-bottom: var(--space-xl);
+}
+
+.tracking-header-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.tracking-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.tracking-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tracking-title {
+  line-height: 1.05;
+}
+
+.tracking-quickbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.quickbar-btn {
+  padding: 0.75rem 1.4rem;
+}
+
+.download-notification-bar {
+  background-color: var(--surface-container-low);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: slideDown 0.3s ease;
+}
+
+/* Master Tracking Card */
+.master-tracking-card {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.master-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border-hairline);
+  padding-bottom: var(--space-lg);
+}
+
+.master-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.route-sub-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.master-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.eta-badge-box {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+/* Timeline */
+.timeline-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-sm);
+  position: relative;
+}
+
+.timeline-step {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.step-indicator-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--surface-container-low);
+  border: 2px solid var(--border-hairline);
+  color: var(--outline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+  transition: all 0.25s ease;
+}
+
+.step-connector {
+  flex: 1;
+  height: 2px;
+  background-color: var(--border-hairline);
+  margin: 0 4px;
+}
+
+.connector-done {
+  background-color: var(--status-success);
+}
+
+.step-completed .step-circle {
+  background-color: var(--status-success);
+  border-color: var(--status-success);
+  color: #ffffff;
+}
+
+.step-active .step-circle {
+  background-color: var(--surface-container-lowest);
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 4px var(--secondary-fixed);
+}
+
+.step-active-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  animation: pulse-glow 1.5s infinite;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 8px;
+}
+
+.step-top-line {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.step-detail {
+  line-height: 17px;
+}
+
+/* Map Card */
+.map-card {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.map-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.gps-live-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background-color: var(--surface-container-low);
+  border-radius: var(--radius-full);
+}
+
+.vector-route-canvas {
+  width: 100%;
+  background-color: var(--surface-container-lowest);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.route-svg {
+  width: 100%;
+  height: 220px;
+}
+
+.radar-pulse-ring {
+  animation: radar-pulse 2s infinite ease-out;
+  transform-origin: 480px 74px;
+}
+
+@keyframes radar-pulse {
+  0% { r: 8px; opacity: 0.8; }
+  100% { r: 28px; opacity: 0; }
+}
+
+.route-node-label {
+  font-family: var(--font-geist);
+  font-size: 11px;
+  fill: var(--on-surface);
+}
+
+.route-courier-label {
+  font-size: 10px;
+  font-weight: 700;
+  fill: var(--secondary);
+}
+
+.current-corridor-strip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background-color: var(--surface-container-low);
+  border-top: 1px solid var(--border-hairline);
+}
+
+.telemetry-badges-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--surface-container-low);
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-hairline);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.telemetry-badge-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: center;
+}
+
+.telemetry-badge-pipe {
+  width: 1px;
+  height: 36px;
+  background-color: var(--border-hairline);
+}
+
+/* Cold Chain Card */
+.cold-chain-card {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  justify-content: space-between;
+}
+
+.cold-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cold-realtime-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.cold-stat-box {
+  background-color: var(--surface-container-low);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.drift-chart-wrapper {
+  background-color: var(--surface-container-lowest);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.drift-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+.drift-sparkline-svg {
+  width: 100%;
+  height: 60px;
+}
+
+.drift-legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.chain-verification-box {
+  background-color: var(--surface-container-low);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  padding: 12px;
+}
+
+.verification-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Manifest Section */
+.manifest-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.manifest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Signatures */
+.signatures-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gutter-lg);
+}
+
+.signature-card {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.signature-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.signature-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.signature-hash {
+  margin-top: 6px;
+  padding: 6px 10px;
+  background-color: var(--surface-container-low);
+  border-radius: var(--radius-sm);
+  color: var(--outline);
+  font-size: 11px;
+}
+
+.signature-footer {
+  border-top: 1px solid var(--border-hairline);
+  padding-top: var(--space-sm);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .timeline-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  .step-connector {
+    display: none;
+  }
+  .signatures-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .master-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .master-header-right {
+    align-items: flex-start;
+  }
+  .telemetry-badges-row {
+    flex-direction: column;
+  }
+  .telemetry-badge-pipe {
+    display: none;
+  }
+  .cold-realtime-stats {
+    grid-template-columns: 1fr;
+  }
+}

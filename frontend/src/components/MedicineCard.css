@@ -1,0 +1,217 @@
+.medicine-card {
+  background-color: var(--surface-container-lowest);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+}
+
+.medicine-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(113, 46, 221, 0.3);
+}
+
+.medicine-card.critical-border {
+  border-color: rgba(239, 68, 68, 0.35);
+  background: linear-gradient(180deg, #fff 0%, #fffcfc 100%);
+}
+
+.medicine-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.badge-formulary {
+  font-family: var(--font-geist);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--primary-container);
+  background-color: var(--surface-container-high);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.medicine-core-spec {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.medicine-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.medicine-card:hover .medicine-icon-box {
+  transform: scale(1.06);
+}
+
+.medicine-icon-box .material-symbols-outlined {
+  font-size: 28px;
+}
+
+.medicine-titles {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.medicine-name {
+  font-family: var(--font-manrope);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--on-surface);
+  line-height: 22px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.medicine-active {
+  font-family: var(--font-geist);
+  font-size: 13px;
+  color: var(--on-surface-variant);
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.medicine-manufacturer {
+  font-family: var(--font-geist);
+  font-size: 11px;
+  color: var(--outline);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+.medicine-grid-meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background-color: var(--surface-container-low);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-hairline);
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.meta-label {
+  font-family: var(--font-manrope);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--outline);
+}
+
+.meta-value {
+  font-size: 12px;
+  color: var(--on-surface);
+  font-weight: 600;
+}
+
+.text-optimal {
+  color: var(--status-success-text);
+}
+
+.text-critical {
+  color: var(--status-error);
+  font-weight: 700;
+}
+
+.medicine-sparkline-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--border-hairline);
+}
+
+.sparkline-label-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.sparkline-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+}
+
+.medicine-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding-top: 4px;
+}
+
+.medicine-price-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.medicine-price {
+  font-family: var(--font-manrope);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+.price-unit {
+  font-family: var(--font-geist);
+  font-size: 11px;
+  color: var(--outline);
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+.monograph-link {
+  font-family: var(--font-geist);
+  font-size: 11px;
+  color: var(--secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.btn-action {
+  padding: 8px 14px;
+  font-size: 12px;
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+}
+
+.action-icon {
+  font-size: 16px;
+}

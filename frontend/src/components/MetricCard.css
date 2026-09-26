@@ -1,0 +1,88 @@
+.metric-card {
+  background-color: var(--surface-container-lowest);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.metric-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metric-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--surface-container-low);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-container);
+}
+
+.metric-icon-wrapper .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.metric-card-value {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.metric-card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metric-delta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-geist);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.delta-arrow {
+  font-size: 14px;
+}
+
+.delta-positive {
+  color: var(--status-success);
+}
+
+.delta-critical {
+  color: var(--status-error);
+}
+
+.delta-warning {
+  color: var(--status-warning);
+}
+
+.delta-neutral {
+  color: var(--outline);
+}
+
+.metric-subtext {
+  font-size: 12px;
+  color: var(--outline);
+}

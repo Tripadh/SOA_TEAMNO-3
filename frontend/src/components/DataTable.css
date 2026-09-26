@@ -1,0 +1,6 @@
+.table-empty-cell {
+  text-align: center !important;
+  padding: 32px 16px !important;
+  color: var(--outline);
+  font-style: italic;
+}
